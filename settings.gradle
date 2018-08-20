@@ -1,0 +1,8 @@
+include 'security'
+include 'monitoring'
+include 'authenticator'
+include 'customers'
+include 'customersHttpClient'
+include 'orders'
+
+rootProject.name = 'proyecto'
