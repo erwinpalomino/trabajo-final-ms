@@ -20,7 +20,7 @@ public class OrderService {
     Boolean validatedCustomer = customerService.validateCustomer(order.getCustomerId());
 
     if (!validatedCustomer) {
-      throw new InvalidCustomerException("No se pudo validar al cliente. Se cancela la creación del pedido.", order.getCustomerId().toString());
+      throw new InvalidCustomerException("No se pudo validar al cliente. Se cancela la creacion del pedido.", order.getCustomerId().toString());
     }
 
     order.setCreatedAt(new Date());
